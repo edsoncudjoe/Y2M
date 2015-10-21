@@ -1,8 +1,18 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+
+}
 header.jumbotron {
     padding: 90px 30px;
     margin: 0 auto;
     background: #7986CD none repeat scroll 0% 0%;
     color: #fff;
+}
+
+header.jumbotron h1 {
+    font-size: 63px;
 }
 
 div.content {
@@ -28,3 +38,24 @@ ol li {
     list-style: none;
     font-size: 1.3em;
 }
+
+.glyphicon {
+    font-weight: lighter;
+}
+
+div.col-xs-12.col-sm-4.content-img img {
+    border-radius: 5px;
+}
+
+@media (max-width: 767px ) {
+    .content-img img {
+        display: none;
+    }
+    div.text-content ul,
+    ol {
+        padding-left: 10px;
+    }
+}
+
+
+

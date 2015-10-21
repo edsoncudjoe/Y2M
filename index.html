@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YouTube Downloader</title>
+    <title>Y2M Downloader</title>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/lavish-bootstrap.css"/>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -24,24 +26,17 @@
                 <a class="navbar-brand" href="#">Y2M</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Screenshots <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Docs <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Feature List</a></li>
                             <li><a href="#">Changelog</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Docs <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">User Manual</a></li>
-                            <li><a href="#">FAQ</a></li>
                             <li><a href="#">Video Tutorial</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">Screenshots <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Download</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -51,41 +46,54 @@
         <div class="container">
             <h1>Y2M</h1>
             <p style="padding:10px;"></p>
-            <h3>Download YouTube videos direct to your laptop</h3>
+            <!-- <h3>Download YouTube videos direct to your laptop</h3> -->
         </div>
 </header>
 <div class="container">
-    <div class="row content">
-        <div class="col-xs-12 col-sm-8">
-            <h2>Features</h2>
+    <!--<div class="row">
+        <div class="col-sm-6">
             <ul>
-                <li>Choose video quality before you download</li>
-                <li>Watch clips saved on to your laptop/desktop in HD</li>
-                <li>Save music as an mp3 to take with you anywhere</li>
+                <li><img src="http://i.imgur.com/yKukG1yt.png" alt="" class="screenshot" onmouseover="src='http://i.imgur.com/yKukG1ym.png';" onmouseout="src='http://i.imgur.com/yKukG1yt.png';"/></li>
+                <li><img src="http://i.imgur.com/yKukG1yt.png" alt="" class="screenshot" onmouseover="src='http://i.imgur.com/yKukG1ym.png';" onmouseout="src='http://i.imgur.com/yKukG1yt.png';"/></li>
+
             </ul>
         </div>
-        <div class="col-xs-12 col-sm-4" id="feat-img"><img src="http://i.imgur.com/xtzpPwKm.jpg" alt="test"/></div>
+    </div> -->
+    <div class="row content">
+        <div class="col-xs-12 col-sm-5">
+            <div class="text-content">
+                <h2>Features</h2>
+                <ul>
+                    <li>Choose the video quality before you download</li>
+                    <li>Watch clips saved on to your laptop/desktop in HD</li>
+                    <li>Save music as an mp3 to take with you anywhere</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 content-img"><img src="http://i.imgur.com/xtzpPwKm.jpg" alt="test"/></div>
     </div>
     <div class="row content">
-        <div class="col-xs-12 col-sm-4" id="hiw-img"><img src="http://i.imgur.com/erKeqxTm.jpg" alt="test"/></div>
-        <div class="col-xs-12 col-sm-8" id="hiw">
+        <div class="col-xs-12 col-sm-4 content-img"><img src="http://i.imgur.com/erKeqxTm.jpg" alt="test"/></div>
+        <div class="col-xs-12 col-sm-7 col-sm-offset-1" id="hiw">
             <h2>How It Works</h2>
-            <p>The downloader works in these simple steps:</p>
             <ol>
                 <li>Enter the name of the clip in the search bar</li>
                 <li>Click on the video you want in the results bar</li>
-                <li>For videos pick the format and quality you want</li>
-                <li>Click to Download</li>
-                <li>For mp3 files just click to download</li>
+                <li>For videos pick the quality then download</li>
+                <li>For mp3 files just download</li>
             </ol>
         </div>
     </div>
     <div class="row content">
         <div class="col-xs-12">
             <h2>Download</h2>
-            <p><strong>System requirements:</strong> Mac OS X 10.6.8+ (Snow Leopard+)</p>
+            <p><a href="#">Download Y2M for Mac OS X</a></p>
+            <p><a href="#">Download Y2M for Windows</a></p>
+            <p style="padding: 5px"></p>
+            <p><strong>System requirements:</strong>
+            <p>Mac OS X 10.6.8+ (Snow Leopard+)<br>Windows 7(64bit)+</p>
             <p style="padding: 20px"></p>
-        <p><a href="#">Download Y2M (Mac OS X)</a></p>
+
         </div>
     </div>
     </div>
@@ -93,21 +101,27 @@
     <div class="container">
         <div class="row footer-row">
             <div class="col-xs-8">
-                <h5>Links</h5>
+                <h4>Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Screenshots</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Home</a></span></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Features</a></span></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Screenshots</a></span></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Docs</a></span></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Download</a></span></li>
+                    <li><span class="glyphicon glyphicon-menu-right"><a href="#"> Contact</a></span></li>
                 </ul>
             </div>
             <div class="col-xs-4">
-                Social icons...
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://github.com.com/edsoncudjoe/yt2mp3">Github</a></li>
+                    <li><a href="https://twitter.com/no_sle3p">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="mailto:info@y2m.io">Email</a></li>
+                </ul>
             </div>
             <div class="col-xs-12">
-                2015 E.Cudjoe
+                <!-- 2015 E.Cudjoe -->
             </div>
         </div>
     </div>
