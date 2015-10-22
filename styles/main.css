@@ -1,13 +1,42 @@
 body {
     font-family: Roboto, sans-serif;
-    font-weight: 200;
-    font-size: 40px;
-
+    font-weight: 300;
+    font-size: 15px;
 }
+/*============NavBar========================*/
+#top-nav {
+    background: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.8);
+}
+
+button.navbar-toggle.collapsed {
+    border-color: #9a9a9a;
+}
+
+i.fa.fa-arrow-down {
+    font-size: 1.2em;
+    color: #9a9a9a;
+}
+
+ul.nav.navbar-nav li a {
+    padding-bottom: 3px;
+}
+/*-------------Hover------------------------*/
+div.navbar-header a.navbar-brand:hover {
+    color: #28a4c9;
+}
+
+ul.nav.navbar-nav li a:hover {
+    color: #28a4c9;
+    border-bottom: 1px ridge #28a4c9;
+}
+/*==========================================*/
+
+/*===========Header=========================*/
 header.jumbotron {
-    padding: 90px 30px;
+    padding: 110px 30px;
     margin: 0 auto;
-    background: #7986CD none repeat scroll 0% 0%;
+    background: url("http://i.imgur.com/vUkMw7f.jpg") no-repeat center center fixed;
     color: #fff;
 }
 
@@ -15,14 +44,37 @@ header.jumbotron h1 {
     font-size: 63px;
 }
 
+/*==========================================*/
+
+/*============Main==========================*/
+h1 {
+    font-size: 72px;
+}
+h2 { font-size: 62px; }
+h3 { font-size: 52px; }
+h4 { font-size: 42px; }
 div.content {
     margin: 0px auto;
-    padding: 50px 0px;
+    padding: 100px 0px;
     border-bottom: 1px ridge;
     min-height: 300px;
     text-align: center;
 }
+ul.list-unstyled.footer-list li i.fa.fa-chevron-right,
+ul.list-unstyled.social li i.fa.fa-chevron-right {
+    font-size: 0.5em;
+}
 
+.content-img img {
+    border-radius: 5px;
+}
+
+div#hiw-content {
+    //background-color: rgba(201,100,70,0.1);
+}
+/*==========================================*/
+
+/*============Footer========================*/
 footer .container .footer-row {
     background-color: #fafafa;
     margin: 0 auto;
@@ -32,21 +84,9 @@ footer .col-xs-12 {
     padding: 40px;
     text-align: center;
 }
+/*==========================================*/
 
-ul li,
-ol li {
-    list-style: none;
-    font-size: 1.3em;
-}
-
-.glyphicon {
-    font-weight: lighter;
-}
-
-div.col-xs-12.col-sm-4.content-img img {
-    border-radius: 5px;
-}
-
+/*===========Media Queries=================*/
 @media (max-width: 767px ) {
     .content-img img {
         display: none;
