@@ -1,7 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    
 }
 /*============NavBar========================*/
 #top-nav {
@@ -18,8 +18,17 @@ i.fa.fa-arrow-down {
     color: #9a9a9a;
 }
 
+div.container-fluid {
+    padding: 10px;    
+}
+a.navbar-brand,
 ul.nav.navbar-nav li a {
+    font-size: 24px;
     padding-bottom: 3px;
+}
+
+ul.nav.navbar-nav.list-unstyled.text-btn {
+    font-size: 15px;
 }
 /*-------------Hover------------------------*/
 div.navbar-header a.navbar-brand:hover {
@@ -34,9 +43,10 @@ ul.nav.navbar-nav li a:hover {
 
 /*===========Header=========================*/
 header.jumbotron {
-    padding: 110px 30px;
+    padding: 200px 40px;
     margin: 0 auto;
     background: url("http://i.imgur.com/vUkMw7f.jpg") no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
 }
 
@@ -47,31 +57,43 @@ header.jumbotron h1 {
 /*==========================================*/
 
 /*============Main==========================*/
-h1 {
-    font-size: 72px;
-}
+h1 { font-size: 72px; }
 h2 { font-size: 62px; }
 h3 { font-size: 52px; }
 h4 { font-size: 42px; }
+
+div.text-content ul.list-unstyled li {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+}
+
+ol.list-unstyled li {
+    font-size: 1.6em;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
 div.content {
     margin: 0px auto;
     padding: 100px 0px;
     border-bottom: 1px ridge;
-    min-height: 300px;
     text-align: center;
 }
+
 ul.list-unstyled.footer-list li i.fa.fa-chevron-right,
-ul.list-unstyled.social li i.fa.fa-chevron-right {
-    font-size: 0.5em;
+ul.list-unstyled.social li i.fa {
+    font-size: 1.6em;
+    padding-bottom: 10px;
 }
 
 .content-img img {
     border-radius: 5px;
 }
 
-div#hiw-content {
-    //background-color: rgba(201,100,70,0.1);
+div.row.content p {
+    font-size: 1.6em;
 }
+
 /*==========================================*/
 
 /*============Footer========================*/
@@ -95,7 +117,21 @@ footer .col-xs-12 {
     ol {
         padding-left: 10px;
     }
+    a.navbar-brand {
+        font-size: 2.5em;
+    }
+    button#coll-btn.navbar-toggle.collapsed {
+        font-size: 1.4em;
+    }
 }
+
+@media only screen and (min-width : 768px) and (max-width: 994px) {
+    div#hiw h2,
+    ol.list-unstyled {
+        margin-right: -100px;
+    }
+}
+
 
 
 
